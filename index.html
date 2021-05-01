@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="music-container">
+            <div class="image-container">
+                <img src="images/Honey Honey.png" alt="music-cover" class="music-cover" id="cover">
+            </div>
+
+            <div class="music-info">
+                <p class="music-title" id="title">Honey Honey</p>
+                <p class="music-singer" id="artist">Mandragora</p>
+            </div>
+
+            <div class="progress-bar-container">
+                <span class="current-position">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress">
+                        <div class="player-cursor"></div>
+                    </div>
+                </div>
+                <span class="song-duration" id="song-duration">4:20</span>
+            </div>
+
+            <audio src="music/Honey Honey.mp3" id="audio"></audio>
+
+            <div class="music-controls">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+
+                <button id="play" class="action-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>
